@@ -1,0 +1,159 @@
+body {
+    background-color: #000313; /* Color de fondo de la página */
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+.gallery-item {
+    margin-bottom: 20px;
+    overflow: hidden;
+    border: 2px solid #07d0f3;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.2s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+.modal .btn-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #000;
+    opacity: 0.7;
+}
+
+.modal .btn-close:hover {
+    opacity: 1;
+}
+
+/* Estilos adicionales para las páginas de descripción */
+.container {
+    margin-top: 50px;
+}
+
+.titulo {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.subtitulo {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #bbbbbb;
+}
+
+.parrafo {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0 20px;
+}
+
+.img-descripcion {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.boton-inicio {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #270066;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.boton-inicio:hover {
+    background-color: #3700b3;
+    transform: scale(1.1);
+}
+
+/* Estilos para la navegación personalizada */
+.navbar-custom {
+    background-color: #270066; /* Color de fondo personalizado para la navegación */
+    color: #fff; /* Color de texto */
+}
+
+.navbar-custom .navbar-brand, 
+.navbar-custom .navbar-nav .nav-link {
+    color: #fff; /* Color de texto para los enlaces */
+}
+
+.navbar-custom .navbar-brand:hover, 
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: #ffdd57; /* Color de texto al pasar el ratón */
+}
+
+.img-decoracion {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Tamaño máximo en ancho */
+    height: auto;
+    max-height: 300px; /* Tamaño máximo en altura */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centramos la imagen */
+    opacity: 0; /* Inicialmente invisible */
+    animation: fadeIn 1s forwards; /* Animación de desvanecimiento */
+}
+
+.img-decoracion:hover {
+    transform: scale(1.05); /* Efecto de zoom */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    border: 2px solid #6c757d; /* Cambio de color del borde */
+}
+
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilos para el footer */
+.footer-custom {
+    background-color: #270066; /* Color de fondo del footer */
+    color: #fff; /* Color del texto */
+    padding: 20px 0; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+}
+
+.footer-custom a {
+    color: #fff; /* Color de los enlaces */
+    margin: 0 10px; /* Espaciado entre enlaces */
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+.footer-custom a:hover {
+    color: #ffdd57; /* Color de los enlaces al pasar el ratón */
+}
+
+.footer-custom img {
+    border-radius: 50%; /* Bordes redondeados para la imagen */
+    margin-left: 10px; /* Espaciado a la izquierda de la imagen */
+    width: 50px; 
+    height: 50px; 
+}

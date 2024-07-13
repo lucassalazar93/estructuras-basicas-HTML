@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descripción Tabla</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrQd6V2k3nEoj4TZxV0ZbGxjbr0aT+nFnHRXNm4/j7KpLsMQ1hEMwF/R14F5BS6JLT+Bd0i5d3lHnT1VGw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .img-decoracion {
+            position: relative;
+            filter: brightness(0.8);
+            transition: filter 0.3s ease;
+        }
+
+        .img-decoracion:hover {
+            filter: brightness(1);
+        }
+
+        .footer-custom {
+            background-color: #270066;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid justify-content-center">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorías
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="descripcion_html.html">HTML</a></li>
+                            <li><a class="dropdown-item" href="descripcion_encabezado_parrafo.html">Encabezado y
+                                    Párrafo</a></li>
+                            <li><a class="dropdown-item" href="descripcion_enlaces_imagenes.html">Enlaces e Imágenes</a>
+                            </li>
+                            <li><a class="dropdown-item" href="descripcion_listas.html">Listas</a></li>
+                            <li><a class="dropdown-item" href="descripcion_formularios.html">Formularios</a></li>
+                            <li><a class="dropdown-item" href="descripcion_tabla.html">Tabla</a></li>
+                            <li><a class="dropdown-item" href="descripcion_divisiones_secciones.html">Divisiones y
+                                    Secciones</a></li>
+                            <li><a class="dropdown-item" href="descripcion_contenedores_multimedia.html">Contenedores
+                                    Multimedia</a></li>
+                            <li><a class="dropdown-item" href="descripcion_elementos_interactivos.html">Elementos
+                                    Interactivos</a></li>
+                            <li><a class="dropdown-item" href="descripcion_elementos_navegacion.html">Elementos de
+                                    Navegación</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0 my-5">
+        <img src="img/tabla.png" alt="Descripción de la imagen" class="img-fluid w-100 img-decoracion">
+    </div>
+
+    <div class="container mt-5">
+        <h1 class="text-center"><strong>TABLAS</strong></h1>
+        <h2 class="text-center text-muted">presentación de datos</h2>
+        <p class="mt-4">Las tablas (table) en HTML son herramientas poderosas para organizar y presentar datos en un
+            formato estructurado. Se componen de filas (tr) y columnas (th para encabezados, td para celdas de datos).
+            Las tablas son ideales para mostrar información tabular como horarios, listas de precios, resultados de
+            encuestas o cualquier dato que se beneficie de una presentación estructurada. Facilitan la comparación y el
+            análisis de información de manera clara y ordenada. Las tablas pueden ser estilizadas con CSS para mejorar
+            su apariencia y usabilidad. Su uso correcto asegura que los datos sean accesibles y fáciles de entender para
+            los usuarios.</p>
+    </div>
+
+    <div class="container mt-5 text-center">
+        <h3>Ejemplo Interactivo</h3>
+        <table class="table table-bordered" id="interactiveTable">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juan Pérez</td>
+                    <td>30</td>
+                    <td><button class="btn btn-danger btn-sm" onclick="deleteRow(this)">Eliminar</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="mt-3">
+            <input type="text" id="nameInput" placeholder="Nombre" class="form-control d-inline-block" style="width: auto;">
+            <input type="number" id="ageInput" placeholder="Edad" class="form-control d-inline-block" style="width: auto;">
+            <button class="btn btn-primary" onclick="addRow()">Agregar</button>
+        </div>
+    </div>
+
+    <footer class="footer-custom mt-5">
+        <div class="container">
+            <p>Conéctate con nosotros en las redes sociales</p>
+            <a href="#" class="text-white me-3">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="#" class="text-white me-3">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="#" class="text-white me-3">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="#" class="text-white me-3">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <p class="mt-3 mb-0 d-flex align-items-center justify-content-center">
+                Diseñado por Lukas Salazar
+                <img src="img/IMG_0189 (1).JPEG" alt="Foto de Lukas Salazar" class="rounded-circle ms-2">
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9gybBogGzOgQyZqUHTn5V7K9iKNd5Khi4o5rL4Ro1kDOMI/6h7W" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-QF1TskNf4z2Q3P5scCU6HkVStbGnQ7aJZ9Pj6Ot9e+pc1xzNURySazZeax+0rNH5" crossorigin="anonymous">
+        </script>
+    <script>
+        function addRow() {
+            const name = document.getElementById('nameInput').value;
+            const age = document.getElementById('ageInput').value;
+
+            if (name && age) {
+                const table = document.getElementById('interactiveTable').getElementsByTagName('tbody')[0];
+                const newRow = table.insertRow();
+
+                const nameCell = newRow.insertCell(0);
+                const ageCell = newRow.insertCell(1);
+                const actionCell = newRow.insertCell(2);
+
+                nameCell.textContent = name;
+                ageCell.textContent = age;
+                actionCell.innerHTML = '<button class="btn btn-danger btn-sm" onclick="deleteRow(this)">Eliminar</button>';
+
+                document.getElementById('nameInput').value = '';
+                document.getElementById('ageInput').value = '';
+            } else {
+                alert('Por favor, complete todos los campos.');
+            }
+        }
+
+        function deleteRow(button) {
+            const row = button.parentNode.parentNode;
+            row.parentNode.removeChild(row);
+        }
+    </script>
+</body>
+
+</html>

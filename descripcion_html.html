@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descripción HTML</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrQd6V2k3nEoj4TZxV0ZbGxjbr0aT+nFnHRXNm4/j7KpLsMQ1hEMwF/R14F5BS6JLT+Bd0i5d3lHnT1VGw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .img-decoracion {
+            position: relative;
+            filter: brightness(0.8);
+            transition: filter 0.3s ease;
+        }
+
+        .img-decoracion:hover {
+            filter: brightness(1);
+        }
+
+        .footer-custom {
+            background-color: #270066;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid justify-content-center">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorías
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="descripcion_html.html">HTML</a></li>
+                            <li><a class="dropdown-item" href="descripcion_encabezado_parrafo.html">Encabezado y
+                                    Párrafo</a></li>
+                            <li><a class="dropdown-item" href="descripcion_enlaces_imagenes.html">Enlaces e Imágenes</a>
+                            </li>
+                            <li><a class="dropdown-item" href="descripcion_listas.html">Listas</a></li>
+                            <li><a class="dropdown-item" href="descripcion_formularios.html">Formularios</a></li>
+                            <li><a class="dropdown-item" href="descripcion_tabla.html">Tabla</a></li>
+                            <li><a class="dropdown-item" href="descripcion_divisiones_secciones.html">Divisiones y
+                                    Secciones</a></li>
+                            <li><a class="dropdown-item" href="descripcion_contenedores_multimedia.html">Contenedores
+                                    Multimedia</a></li>
+                            <li><a class="dropdown-item" href="descripcion_elementos_interactivos.html">Elementos
+                                    Interactivos</a></li>
+                            <li><a class="dropdown-item" href="descripcion_elementos_navegacion.html">Elementos de
+                                    Navegación</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0 my-5">
+        <img src="img/HTML.png" alt="Descripción de la imagen" class="img-fluid w-100 img-decoracion">
+    </div>
+
+    <div class="container mt-5">
+        <h1 class="text-center"><strong>HTML</strong></h1>
+        <h2 class="text-center text-muted">El fundamento de la web</h2>
+        <p class="mt-4">HTML (HyperText Markup Language) es el lenguaje estándar utilizado para crear y diseñar páginas
+            web. Utiliza etiquetas y elementos para estructurar contenido, como textos, imágenes, enlaces y más.
+            Proporciona la base para el diseño y la funcionalidad del sitio, permitiendo a los desarrolladores organizar
+            y presentar la información de manera efectiva. HTML es fácil de aprender y esencial para cualquier
+            desarrollador web. Con HTML, se puede definir la estructura del documento, especificar encabezados,
+            párrafos, listas, tablas, formularios, imágenes, videos y enlaces, entre otros elementos. Su correcta
+            implementación es fundamental para asegurar la accesibilidad, usabilidad y optimización en motores de
+            búsqueda (SEO) de las páginas web.</p>
+    </div>
+
+    <div class="container mt-5">
+        <h3>Ejemplo Interactivo</h3>
+        <form id="contactForm">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Escribe tu mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        <div id="formFeedback" class="mt-3"></div>
+    </div>
+
+    <footer class="footer-custom mt-5">
+        <div class="container">
+            <p>Conéctate con nosotros en las redes sociales</p>
+            <a href="#" class="text-white me-3">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="#" class="text-white me-3">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="#" class="text-white me-3">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="#" class="text-white me-3">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <p class="mt-3 mb-0 d-flex align-items-center justify-content-center">
+                Diseñado por Lukas Salazar
+                <img src="img/IMG_0189 (1).JPEG" alt="Foto de Lukas Salazar" class="rounded-circle ms-2" style="width: 40px;">
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9gybBogGzOgQyZqUHTn5V7K9iKNd5Khi4o5rL4Ro1kDOMI/6h7W" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-QF1TskNf4z2Q3P5scCU6HkVStbGnQ7aJZ9Pj6Ot9e+pc1xzNURySazZeax+0rNH5" crossorigin="anonymous">
+        </script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            const feedback = `Nombre: ${name}<br>Correo Electrónico: ${email}<br>Mensaje: ${message}`;
+            document.getElementById('formFeedback').innerHTML = feedback;
+        });
+    </script>
+</body>
+
+</html>

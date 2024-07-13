@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descripción Formularios</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrQd6V2k3nEoj4TZxV0ZbGxjbr0aT+nFnHRXNm4/j7KpLsMQ1hEMwF/R14F5BS6JLT+Bd0i5d3lHnT1VGw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .img-decoracion {
+            position: relative;
+            filter: brightness(0.8);
+            transition: filter 0.3s ease;
+        }
+
+        .img-decoracion:hover {
+            filter: brightness(1);
+        }
+
+        .footer-custom {
+            background-color: #270066;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid justify-content-center">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorías
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="descripcion_html.html">HTML</a></li>
+                            <li><a class="dropdown-item" href="descripcion_encabezado_parrafo.html">Encabezado y
+                                    Párrafo</a></li>
+                            <li><a class="dropdown-item" href="descripcion_enlaces_imagenes.html">Enlaces e Imágenes</a>
+                            </li>
+                            <li><a class="dropdown-item" href="descripcion_listas.html">Listas</a></li>
+                            <li><a class="dropdown-item" href="descripcion_formularios.html">Formularios</a></li>
+                            <li><a class="dropdown-item" href="descripcion_tabla.html">Tabla</a></li>
+                            <li><a class="dropdown-item" href="descripcion_divisiones_secciones.html">Divisiones y
+                                    Secciones</a></li>
+                            <li><a class="dropdown-item" href="descripcion_contenedores_multimedia.html">Contenedores
+                                    Multimedia</a></li>
+                            <li><a class="dropdown-item" href="descripcion_elementos_interactivos.html">Elementos
+                                    Interactivos</a></li>
+                            <li><a class="dropdown-item" href="descripcion_elementos_navegacion.html">Elementos de
+                                    Navegación</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0 my-5">
+        <img src="img/formularios.png" alt="Descripción de la imagen" class="img-fluid w-100 img-decoracion">
+    </div>
+
+    <div class="container mt-5">
+        <h1 class="text-center"><strong>FORMULARIOS</strong></h1>
+        <h2 class="text-center text-muted">recolección de datos</h2>
+        <p class="mt-4">Los formularios (form) son elementos interactivos en HTML que permiten la recolección de datos
+            de los usuarios. Utilizan diversos tipos de campos, como entradas de texto (input), botones de radio
+            (radio), casillas de verificación (checkbox) y botones de envío (submit), para capturar información. Los
+            formularios son esenciales para la interacción y funcionalidad de aplicaciones web, permitiendo a los
+            usuarios registrarse, iniciar sesión, enviar consultas, realizar compras y mucho más. Son una parte integral
+            de los sitios web modernos, facilitando la comunicación entre el usuario y el servidor. La correcta
+            implementación de formularios garantiza una experiencia de usuario fluida y eficiente, mejorando la
+            funcionalidad general del sitio web.</p>
+    </div>
+
+    <div class="container mt-5 text-center">
+        <h3>Ejemplo Interactivo</h3>
+        <form id="exampleForm">
+            <div class="mb-3">
+                <label for="nameInput" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nameInput" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="mb-3">
+                <label for="emailInput" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="Ingresa tu correo electrónico">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Género</label>
+                <div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="genderOptions" id="maleOption" value="male">
+                        <label class="form-check-label" for="maleOption">Masculino</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="genderOptions" id="femaleOption"
+                            value="female">
+                        <label class="form-check-label" for="femaleOption">Femenino</label>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Intereses</label>
+                <div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="interestCoding" value="coding">
+                        <label class="form-check-label" for="interestCoding">Programacion</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="interestMusic" value="music">
+                        <label class="form-check-label" for="interestMusic">Crear un negocio</label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <footer class="footer-custom mt-5">
+        <div class="container">
+            <p>Conéctate con nosotros en las redes sociales</p>
+            <a href="#" class="text-white me-3">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="#" class="text-white me-3">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="#" class="text-white me-3">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="#" class="text-white me-3">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <p class="mt-3 mb-0 d-flex align-items-center justify-content-center">
+                Diseñado por Lukas Salazar
+                <img src="img/IMG_0189 (1).JPEG" alt="Foto de Lukas Salazar" class="rounded-circle ms-2"
+                    style="width: 40px;">
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9gybBogGzOgQyZqUHTn5V7K9iKNd5Khi4o5rL4Ro1kDOMI/6h7W" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-QF1TskNf4z2Q3P5scCU6HkVStbGnQ7aJZ9Pj6Ot9e+pc1xzNURySazZeax+0rNH5" crossorigin="anonymous">
+        </script>
+    <script>
+        document.getElementById('exampleForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById('nameInput').value;
+            const email = document.getElementById('emailInput').value;
+            const gender = document.querySelector('input[name="genderOptions"]:checked').value;
+            const interests = Array.from(document.querySelectorAll('input[type="checkbox"]:checked')).map(checkbox => checkbox.value);
+
+            alert(`Nombre: ${name}\nCorreo electrónico: ${email}\nGénero: ${gender}\nIntereses: ${interests.join(', ')}`);
+        });
+    </script>
+</body>
+
+</html>
